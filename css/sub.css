@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* 헤더 변경 */
+#header { height: 160px;}
+#header h1 { padding-top: 76px;}
+/* gnb */
+#gnb { top: 93px;}
+/* 서브본문 */
+#subHeader { height: 300px; background:  no-repeat center / cover;}
+
+#subHeader h2 { padding-top: 70px; 
+                text-align: center; text-transform: uppercase; 
+                font-weight: normal; font-size: 70px; color: #fff;}
+/* subWrap */
+#subWrap { width: 1000px; margin: 30px auto 0; }
+#subWrap::after { content: ""; clear: both; display: block;}
+/* 서브메뉴 */
+#snb { width: 250px; float: left;}
+#sub h3 { height: 95px; margin-bottom: 15px;
+         text-align: center; text-transform: uppercase; 
+         line-height: 95px; font-size: 30px; 
+         background: #3c3c3c; color: #fff;}
+#snb li a { display: block; height: 50px; 
+            border-bottom: 1px solid #b6bbc5; 
+            line-height: 50px; 
+            text-indent: 22px;
+            background: url(../images/bulletSnb.png) no-repeat 229px center;}
+#snb li a:hover { color: #e77348; border-bottom-color: #e77348;
+                 background-image: url(../images/bulletSnbOver.png);}
+/* 서브본문 */
+#subContent { width: 710px; float: right;}
+#subContent h3 { color: gray; 
+                 /* font-weight: normal;
+                 font-size: 40px; 
+                 font-family: 'Times New Roman', serif; */
+                 font: normal 40px "times New Roman", serif;
+                }
+#subContent figure { float: right; margin: 0 0 15px 10px; text-align: center;}
+#subContent p { margin-bottom: 15px; }
+/* 서브페이지 개별 */
+/* company_welcome */
+#subHeader.subHeaderCompany { background-image: url(../images/subtitleCompany.jpg);}
+.subContentCompany { padding: 0 45px 0 20px;}
+/* customercenter_notice */
+#snb .snbContentCustomer { padding-top: 10px;
+                        box-sizing: border-box; 
+                        line-height: 1.2em; }
+#subHeader.subHeaderCustomer { background-image: url(../images/subTitleCustomer.jpg);}
+#notice { width: 660px; }
+#notice thead { height: 30px}
+#notice thead th { height: 30px;
+                text-transform: capitalize; 
+                font-weight: normal; color: #fff; 
+                background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%);}
+#notice thead th.no { width: 56px; border-radius: 5px 0 0 5px;}
+#notice thead th.title { width: 376px; letter-spacing: 0.5em;}
+#notice thead th.write { width: 100px;}
+#notice thead th.date { width: 72px;}
+#notice thead th.read { width: 56px; border-radius: 0 5px 5px 0;}
+#notice tbody { }
+#notice tbody td { padding: 5px 0; text-align: center;
+                border-bottom: 1px solid #ccc;}
+#notice tbody td.listTitle { text-align: left;}
+#notice tbody td div { width: 376px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+/*  */
+#noticeSearch { margin: 16px 45px 35px 0; text-align: right;}
+#noticeSearch input { border: 1px solid #333; border-radius: 10px;}
+#searchBox { width: 220px; height: 20px; text-indent: 10px; background: #fefdeb;}
+#searchBtn { width: 88px; height: 22px; 
+             background: linear-gradient(180deg, #6dbaf2 0%, #246fd2 100%); color: #fff;}
+/* 페이서 번호 */
+#pagecontrol { margin-right: 45px; text-align: center;}
+#pagecontrol a { margin: 0 13px; color: #333;}
