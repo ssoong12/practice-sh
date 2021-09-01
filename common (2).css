@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, p, ul { margin: 0; padding: 0;}
+li { list-style: none;}
+address { font-style: normal;}
+small { font-size: 1em;}
+.hidden { position: absolute; left: -5000px;}
+body { width: 950px; margin: 8px auto 0; border: 1px solid #e7e7e7;} 
+#wrap { width: 960px; margin: 8px auto 0; border: 1px solid #e7e7e7; background: #fff;}
+/* header */
+#mainHeader { height: 279px; background: url(../../images/bg_header.png) no-repeat center / cover;}
+#mainHeader h2 { padding: 30px 0 0 20px; color: #ff0;
+                font-size: 70px;}
+/* gnb */
+#mainNav { height: 60px;}
+#mainNav ul li { width: 25%; float: left;}
+#mainNav ul li a { display: block; text-align: center; line-height: 60px;
+                background: #006600; color: #fff;}
+/* main */
+main { width: 740px; float: left; }
+#content { padding: 30px 20px;}
+#content h3 { margin: 20px 0;}
+#content p { margin-bottom: 10px; font-size: 14px;}
+/* 사진모음 */
+#sidebar { width: 220px; float: left; padding: 20px 0;
+        text-align: center; background: #ddffdd;}
+/* footer */
+#footer { clear: both; padding: 20px 0; text-align: center;
+        background: #061f1f;}
+/* 600 * 1023 */
+@media all and ( max-width: 1023px ) { 
+        #wrap { width: 100%; border: 0; margin: 0;}
+        main { width: 100%; float: none;}
+        #sidebar { width: auto; float: none;}
+        #sidebar img { width: 176px; }
+}
+/* 599 이하 */
+@media all and ( max-width: 599px ) { 
+        body { background: none;}
+        #wrap { width: 100%; }
+        #mainHeader { height: 75px; background: #061f1f;}
+        #mainHeader h2 { padding: 10px 0 0 10px; font-size: 30px; color: #ff0;}
+        #mainNav { height: auto; padding-top: 14px 20px 0;}
+        #mainNav ul li { width: auto; float: none; margin-bottom: 10px;} 
+        #mainNav ul li a { border: 1px solid #ccc; border-radius: 10px; 
+                        background: #fff; color: #000;}
+        #sidebar img { width: 90%; }
+}
+@media print {
+        body { color:#f00; background: rgb(62, 181, 133);}
+}  
