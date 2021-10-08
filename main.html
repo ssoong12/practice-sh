@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDAWON</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="jquery-3.6.0.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </header>
+        <main class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Edawon Coffee</span></h2>
+                <p>차와  관련해서는  현재  세계적으로  인기있는  10여개  브랜드  상품들을  온라인  쇼핑몰을  통해서  가장  경쟁력  있는  가격과  최상 의  서비스로  판매하고  있습니다. 커피는  전세계  10여개  싱글오리진  커피들을  직접  블렌딩하고  로스팅하여  판매합니다. 이다원이라는 이름이 500년 후에도 기억되기를 꿈꾸며, 많은 고객들과 차를 통해서 좋은 감정들을 공감할 수 있기를 꿈꿉니다.</p>
+                <a href="#">View More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/product1.png" alt="녹차" class="greenTea">
+            </div>
+        </main>
+        <ul class="thumb">
+            <li><img src="images/product1.png" alt="녹차" onclick="imgSlider('images/product1.png');changeCircleColor('#7ccf00')"></li>
+            <li><img src="images/product2.png" alt="블랙티" onclick="imgSlider('images/product2.png');changeCircleColor('#908ab2')"></li>
+            <li><img src="images/product3.png" alt="동백꽃차" onclick="imgSlider('images/product3.png');changeCircleColor('#de8883')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.youtube.com/channel/UCp3JfJZpzZfOKKX4x9ENJOg"><img src="images/youtube.png" alt="youtubelogo"></a></li>
+            <li><a href="https://www.instagram.com/edawoncokr/"><img src="images/instargram.png" alt="instargramlogo"></a></li>
+            <li><a href="https://blog.naver.com/NBlogTop.naver?isHttpsRedirect=true&blogId=edawoncokr"><img src="images/blog.png" alt="bloglogo"></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.greenTea').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
